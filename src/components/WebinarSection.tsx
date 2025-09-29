@@ -3,24 +3,24 @@ import { WebinarCard } from "./WebinarCard";
 export const WebinarSection = () => {
   const webinars = [
     {
-      title: "Introduktion till Digital Marknadsföring",
-      description: "Lär dig grunderna i digital marknadsföring och hur du skapar en framgångsrik strategi",
+      title: "Hitta din livsriktning",
+      description: "Upptäck dina värderingar och skapa en klar vision för ditt liv",
       date: "15 Oktober 2025",
-      time: "14:00 - 15:30",
+      time: "19:00 - 20:30",
       spots: 25,
     },
     {
-      title: "Avancerad SEO-strategi",
-      description: "Fördjupa dina kunskaper inom sökmotoroptimering och teknisk SEO",
+      title: "Från dröm till verklighet",
+      description: "Konkreta strategier för att sätta och uppnå dina livsmål",
       date: "22 Oktober 2025",
-      time: "13:00 - 14:30",
+      time: "18:00 - 19:30",
       spots: 15,
     },
     {
-      title: "Content Marketing Masterclass",
-      description: "Skapa innehåll som konverterar och bygger varumärke",
+      title: "Mindset för framgång",
+      description: "Bryt negativa mönster och bygg en stark mental grund",
       date: "29 Oktober 2025",
-      time: "14:00 - 16:00",
+      time: "19:00 - 21:00",
       spots: 30,
     },
   ];
@@ -30,10 +30,10 @@ export const WebinarSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Kommande webinars
+            Kommande transformationsprogram
           </h2>
           <p className="text-xl text-muted-foreground">
-            Delta i våra expertledda sessioner och ta din karriär till nästa nivå
+            Delta i våra live-webinars och ta första steget mot ditt drömliv
           </p>
         </div>
         

@@ -35,7 +35,7 @@ const Login = () => {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <Link to="/" className="text-3xl font-bold bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
-            WebinarPro
+            LifeDesign
           </Link>
         </div>
 
@@ -50,7 +50,7 @@ const Login = () => {
               <CardHeader>
                 <CardTitle>Välkommen tillbaka</CardTitle>
                 <CardDescription>
-                  Logga in på ditt konto för att fortsätta
+                  Fortsätt din resa mot ett bättre liv
                 </CardDescription>
               </CardHeader>
               <form onSubmit={handleLogin}>
@@ -88,9 +88,9 @@ const Login = () => {
           <TabsContent value="signup">
             <Card>
               <CardHeader>
-                <CardTitle>Skapa konto</CardTitle>
+                <CardTitle>Starta din transformation</CardTitle>
                 <CardDescription>
-                  Registrera dig för att få tillgång till alla webinars
+                  Skapa ditt konto och börja designa ditt drömliv
                 </CardDescription>
               </CardHeader>
               <form onSubmit={handleSignup}>

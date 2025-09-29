@@ -5,38 +5,40 @@ import { Check } from "lucide-react";
 export const PricingSection = () => {
   const plans = [
     {
-      name: "Gratis",
+      name: "Grundläggande",
       price: "0",
-      description: "Perfekt för att komma igång",
+      description: "Börja din resa idag",
       features: [
         "Tillgång till utvalda webinars",
-        "Community-forum",
-        "Grundläggande material",
+        "Inspirerande community",
+        "Grundläggande självutvecklingsmaterial",
       ],
     },
     {
-      name: "Premium",
-      price: "299",
-      description: "För seriösa lärande",
+      name: "Transformation",
+      price: "497",
+      description: "För dig som är redo att förändras",
       features: [
-        "Obegränsad tillgång till alla webinars",
-        "Exklusivt premiummaterial",
-        "Nedladdningsbara resurser",
+        "Alla live-webinars och inspelningar",
+        "Personlig 1-till-1 coaching (2h/månad)",
+        "Exklusivt videomaterial och övningar",
+        "Nedladdningsbara arbetsböcker",
         "Prioriterad support",
-        "Certifikat vid slutförande",
+        "Månatliga gruppsessioner",
       ],
       popular: true,
     },
     {
-      name: "Företag",
-      price: "999",
-      description: "För team och organisationer",
+      name: "Elite",
+      price: "1497",
+      description: "Maximal support för maximal transformation",
       features: [
-        "Allt i Premium",
-        "Upp till 10 användare",
-        "Skräddarsydda webinars",
-        "Dedikerad account manager",
-        "Anpassade rapporter",
+        "Allt i Transformation",
+        "Veckovis personlig coaching",
+        "Skräddarsydda program efter dina mål",
+        "Direkt åtkomst till din coach",
+        "Årlig retreat (ingår)",
+        "Livstidsåtkomst till allt material",
       ],
     },
   ];
@@ -46,10 +48,10 @@ export const PricingSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Välj rätt plan för dig
+            Investera i ditt bästa liv
           </h2>
           <p className="text-xl text-muted-foreground">
-            Flexibla abonnemang som växer med dina behov
+            Välj det program som passar din resa mot dina drömmar
           </p>
         </div>
         

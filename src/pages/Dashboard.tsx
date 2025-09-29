@@ -12,19 +12,19 @@ const Dashboard = () => {
 
   const materials = [
     {
-      title: "Digital Marknadsföring - Grundkurs",
+      title: "Hitta din livsriktning - Komplett kurs",
       type: "Video",
-      duration: "2h 30min",
+      duration: "3h 45min",
     },
     {
-      title: "SEO Guide 2025",
+      title: "Målsättningsguide 2025",
       type: "PDF",
-      size: "5.2 MB",
+      size: "4.8 MB",
     },
     {
-      title: "Content Strategy Workbook",
+      title: "Daglig Transformations Workbook",
       type: "PDF",
-      size: "2.8 MB",
+      size: "6.2 MB",
     },
   ];
 
@@ -33,7 +33,7 @@ const Dashboard = () => {
       <nav className="border-b border-border bg-background/80 backdrop-blur-md">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
-            WebinarPro
+            LifeDesign
           </Link>
           <Button variant="ghost" onClick={handleLogout}>
             <LogOut className="mr-2 h-4 w-4" />
@@ -44,9 +44,9 @@ const Dashboard = () => {
 
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold mb-2">Välkommen till din Dashboard</h1>
+          <h1 className="text-4xl font-bold mb-2">Din Transformationsresa</h1>
           <p className="text-muted-foreground">
-            Här hittar du allt ditt exklusiva material och kommande webinars
+            Här hittar du alla dina program, coachingsessioner och material
           </p>
         </div>
 
@@ -55,12 +55,12 @@ const Dashboard = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Video className="h-5 w-5 text-primary" />
-                Mina Webinars
+                Mina Program
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-3xl font-bold">3</p>
-              <p className="text-sm text-muted-foreground">Registrerade webinars</p>
+              <p className="text-sm text-muted-foreground">Aktiva webinars & coaching</p>
             </CardContent>
           </Card>
 
@@ -72,8 +72,8 @@ const Dashboard = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-3xl font-bold">12</p>
-              <p className="text-sm text-muted-foreground">Tillgängliga resurser</p>
+              <p className="text-3xl font-bold">24</p>
+              <p className="text-sm text-muted-foreground">Videos & övningar</p>
             </CardContent>
           </Card>
 
