@@ -3,6 +3,7 @@ name: Deploy Vite app to GitHub Pages
 on:
   push:
     branches: [ main ]   # deploy varje gång du pushar till main
+  workflow_dispatch: {}
 
 permissions:
   contents: read
