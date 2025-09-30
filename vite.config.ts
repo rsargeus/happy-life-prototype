@@ -5,6 +5,12 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Ensure correct asset paths when deploying to GitHub Pages
+  // If running in GitHub Actions, derive the repo name to use as base
+  base:
+    process.env.GITHUB_ACTIONS === "true"
+      ? `/${(process.env.GITHUB_REPOSITORY || "").split("/")[1] || ""}/`
+      : "/",
   server: {
     host: "0.0.0.0",
     port: 8080,
