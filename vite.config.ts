@@ -6,8 +6,10 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
-    host: "::",
-    port: 8080,
+    allowedHosts: [
+      '45877c21-7f3d-4c18-958c-0fd53f243f80-00-3tbea6xqo9ths.riker.replit.dev'
+    ],
+    host: true,   // gör att den accepterar externa hosts
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   base: mode === 'production' ? '/happy-life-prototype/' : '/',
@@ -16,4 +18,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  
 }));
