@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
-  base: '/happy-life-prototype/', // <-- viktigt för GitHub Pages
+  base: mode === 'production' ? '/happy-life-prototype/' : '/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
